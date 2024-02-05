@@ -33,22 +33,22 @@
                 <h2 class="text-sm font-semibold text-gray-900 uppercase dark:text-white" style="margin-bottom: 1rem;">Links</h2>
                   <ul class="text-gray-500 dark:text-gray-400 font-medium" >
                           <li>
-                            <router-link class="hover:underline" to="/">Home</router-link>
+                            <router-link to="/">Home</router-link>
                           </li>
                           <li>
-                            <router-link class="hover:underline" to="/about">About</router-link>
+                            <router-link to="/about">About</router-link>
                           </li>
                           <li>
-                            <router-link class="hover:underline" to="/events">Events</router-link>
+                            <router-link to="/events">Events</router-link>
                           </li>
                           <li>
-                            <router-link class="hover:underline" to="/login">Log In</router-link>
+                            <router-link to="/login">Log In</router-link>
                           </li>
                           <li>
-                            <router-link class="hover:underline" to="/signup">Sign Up</router-link>
+                            <router-link to="/signup">Sign Up</router-link>
                           </li>
                           <li>
-                            <router-link class="hover:underline" to="/merchandise">Merchandise</router-link>
+                            <router-link to="/merchandise">Merchandise</router-link>
                           </li>
                       </ul>
                 </div>
@@ -84,12 +84,12 @@
           <hr class=" border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
           <div class="mx-auto w-full max-w-screen-xxl container sm:grid-col-1 sm:justify-center xl:flex xl:justify-around lg:flex lg:justify-around md:flex md:justify-around" style="background-color: #000000;">
             <div style="display:flex; align-item:center; padding-top:10px; margin:10px; justify-content: center;">
-              <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 Copyright: <a href="https://flowbite.com/" class="hover:underline">Dhanak 2024</a>
+              <span class="text-sm flex items-center justify-center text-gray-500 sm:text-center dark:text-gray-400">© 2024 Copyright: <a href="https://flowbite.com/" class="hover:underline">Dhanak 2024</a>
               </span>
             </div>
               <div class="flex items-center justify-around">
                 <a href="https://iist.dhanak.org.in/">
-                  <img src="./assets/dhanak_logo.png"  alt="Dhanak Logo" />
+                  <img src="./assets/dhanak_logo.png" height="120vh" width="110vh" alt="Dhanak Logo" />
                 </a>
               </div>
               <div class="flex items-center justify-center mt-4 gap-6">
