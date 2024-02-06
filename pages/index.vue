@@ -1,5 +1,5 @@
 <template>
-        <section class="grid w-full items-center justify-center DhanakIntro">
+        <section class="grid w-full items-center justify-center bg-cover bg-center DhanakIntro">
                 <div class="RetroRevival">
             <h2 style=" margin-top: 10px; font-family: 'Vintage'; text-align: center; color: #EAF4D4; font-size: 58px;">
                 Retro Revival
@@ -60,8 +60,6 @@
 }
     .DhanakIntro{
         background-image: url(../assets/HomePage.svg);
-        background-repeat: no-repeat;
-        background-size:cover;
 
         /* background-image: repeating-radial-gradient(  #0c0a0a 80%,#338a7d 90%,#086454 90%);
         background-size: 65px 65px; */
