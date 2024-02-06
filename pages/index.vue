@@ -1,11 +1,11 @@
 <template>
-        <section class="grid w-full items-center justify-center bg-cover bg-center DhanakIntro">
+        <section class="grid w-full items-center justify-center h-screen bg-cover bg-top DhanakIntro">
                 <div class="RetroRevival">
             <h2 style=" margin-top: 10px; font-family: 'Vintage'; text-align: center; color: #EAF4D4; font-size: 58px;">
                 Retro Revival
             </h2>
         </div>
-        <h2 style="margin-top: 1rem; font-family: 'Market_Deco'; text-align: center; text-shadow: 0px 0px 4px #000000; color: #EAF4D4; font-size: 48px;">
+        <h2 style="font-family: 'Market_Deco'; text-align: center; text-shadow: 0px 0px 4px #000000; color: #EAF4D4; font-size: 48px;">
             March 15th to 18th
         </h2>
         </section>
