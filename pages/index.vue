@@ -1,13 +1,9 @@
 <template>
-        <section class="grid w-full items-center justify-center h-screen bg-cover bg-top DhanakIntro">
-                <div class="RetroRevival">
-            <h2 style=" margin-top: 10px; font-family: 'Vintage'; text-align: center; color: #EAF4D4; font-size: 58px;">
-                Retro Revival
+        <section class="grid h-full justify-center items-center bg-cover bg-top DhanakIntro">
+            <h1 class="text-2xl sm:text-4xl md:text-4xl lg:text-6xl xl:text-7xl mt-8 sm:mt-14 md:mt-16 lg:mt-24 xl:mt-32" style=" font-family: 'Vintage'; text-align: center; color: #EAF4D4; ">Retro Revival</h1>
+            <h2 class="text-3xl sm:text-4xl md:text-4xl lg:text-6xl xl:text-7xl mt-3 sm:mt-6 md:mt-8 lg:mt-14 xl:mt-16" style="font-family: 'Market_Deco'; text-align: center; text-shadow: 0px 0px 4px #000000; color: #EAF4D4;">
+                March 15th to 18th
             </h2>
-        </div>
-        <h2 style="font-family: 'Market_Deco'; text-align: center; text-shadow: 0px 0px 4px #000000; color: #EAF4D4; font-size: 48px;">
-            March 15th to 18th
-        </h2>
         </section>
    
     <section class="events">
@@ -50,16 +46,27 @@
     src: url(../assets/fonts/Vintage.ttf);
 }
 
-.RetroRevival{
-    background-image: url(../assets/Banner.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100px;
-    width: 650px;
-    margin-top: 6.8rem;
-}
+/* .banner-container {
+      position: relative;
+      max-width: 100vw; 
+      height: auto;
+      padding-bottom: 30%; 
+      overflow: hidden;
+    } */
+    /* .banner-image {
+        width: 100%;
+      height: auto;
+    } */
+
+    .text-overlay {
+        font-size: 58px;
+      transform: translate(-50%, -50%);
+      color: #EAF4D4;
+      text-align: center;
+      font-family: 'Vintage';
+    } 
     .DhanakIntro{
-        background-image: url(../assets/HomePage.svg);
+        background-image: url(../assets/HomePagePattern.svg);
 
         /* background-image: repeating-radial-gradient(  #0c0a0a 80%,#338a7d 90%,#086454 90%);
         background-size: 65px 65px; */
