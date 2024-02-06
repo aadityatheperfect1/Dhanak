@@ -25,7 +25,7 @@
     </div>
 
     <!-- Hamburger Menu for Small Screens -->
-    <div class="md:hidden flex sticky top-0 z-50 items-center justify-around" 
+    <div class="lg:hidden xl:hidden flex sticky top-0 z-50 items-center justify-around" 
           style=" width:100%;">
           <div style="width: 36px; height: 32px;">
           </div>
