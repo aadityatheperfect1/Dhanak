@@ -47,6 +47,9 @@
                 </div>
               </div>
             </div>
+            <div style="font-family: 'Market_Deco'; font-weight:500; color: #EAF4D4; text-shadow: 1px 1px 8px #000000;" class="flex justify-center text-3xl sm:text-3xl md:text-6xl lg:text-6xl xl:text-6xl mb-3 sm:mt-4 md:mt-6 lg:mt-7 xl:mt-1">
+              To Go!
+            </div>
         </section>
    
     <section class="events">
