@@ -4,6 +4,52 @@
             <h2 class="text-3xl sm:text-4xl md:text-4xl lg:text-6xl xl:text-7xl mt-3 sm:mt-6 md:mt-8 lg:mt-14 xl:mt-16" style="font-family: 'Market_Deco'; text-align: center; text-shadow: 0px 0px 4px #000000; color: #EAF4D4;">
                 March 15th to 18th
             </h2>
+            <div style="font-family: 'VarelaRound-Regular'; font-weight:500; color: #EAF4D4; text-shadow: 1px 1px 8px #000000;" class="flex justify-center mb-3 mt-3 sm:mt-4 md:mt-6 lg:mt-7 xl:mt-7">
+              <div class="grid text-center justify-center items-center">
+                  <div class="text-6xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-6xl">
+                    {{ countdownDays }}
+                  </div>
+                <div class="uppercase text-sm sm:text-sm md:text-sm lg:text-sm xl:text-sm">
+                  Days
+                </div>
+              </div>
+              <div class="justify-top text-6xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-6xl">
+                    :
+              </div>
+              <div class="grid text-center justify-center items-center">
+                  <div class="text-6xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-6xl">
+                    {{ countdownHours }}
+                  </div>
+                <div class="uppercase text-sm sm:text-sm md:text-sm lg:text-sm xl:text-sm">
+                  hours
+                </div>
+              </div>
+              <div class="justify-top text-6xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-6xl">
+                    :
+              </div>
+              <div class="grid text-center justify-center items-center">
+                  <div class="text-6xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-6xl">
+                    {{ countdownMinutes }}
+                  </div>
+                <div class="uppercase text-sm sm:text-sm md:text-sm lg:text-sm xl:text-sm">
+                  minutes
+                </div>
+              </div>
+              <div class="justify-top text-6xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-6xl">
+                    :
+              </div>
+              <div class="grid text-center justify-center items-center">
+                  <div class="text-6xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-6xl">
+                    {{ countdownSeconds }}
+                  </div>
+                <div class="uppercase text-sm sm:text-sm md:text-sm lg:text-sm xl:text-sm">
+                  seconds
+                </div>
+              </div>
+            </div>
+            <div style="font-family: 'Market_Deco'; font-weight:500; color: #EAF4D4; text-shadow: 1px 1px 8px #000000;" class="flex justify-center text-3xl sm:text-3xl md:text-6xl lg:text-6xl xl:text-6xl mb-3 sm:mt-4 md:mt-6 lg:mt-7 xl:mt-1">
+              To Go!
+            </div>
         </section>
    
     <section class="events">
@@ -45,18 +91,10 @@
     font-family: Vintage;
     src: url(../assets/fonts/Vintage.ttf);
 }
-
-/* .banner-container {
-      position: relative;
-      max-width: 100vw; 
-      height: auto;
-      padding-bottom: 30%; 
-      overflow: hidden;
-    } */
-    /* .banner-image {
-        width: 100%;
-      height: auto;
-    } */
+@font-face {
+    font-family: VarelaRound-Regular;
+    src: url(../assets/fonts/VarelaRound-Regular.ttf);
+}
 
     .text-overlay {
         font-size: 58px;
@@ -96,6 +134,7 @@
 }
 .event-name{
         color: #474747;
+        /* color: #EAF4D4; */
         font-size: 64px;
         text-align: center;
         font-family: 'blackrush';
@@ -109,9 +148,16 @@ export default {
     data() {
       return {
         apiData: [],
+        countdownDays: "",
+        countdownHours: "",
+        countdownMinutes: "",
+        countdownSeconds: "",
+        countDownDate: new Date("Mar 16, 2024 00:00:00").getTime(),
       };
     },
     mounted() {
+      this.updateCountdown();
+      setInterval(this.updateCountdown, 1000);
       // Make a GET request when the component is mounted
       axios.get('https://backend.abhishekverma.me/api/events/?format=json', {
         headers: {
@@ -126,6 +172,26 @@ export default {
           // Handle any errors that occurred during the request
           console.error('Error fetching data:', error);
         });
+    },
+    methods: {
+      updateCountdown() {
+        const now = new Date().getTime();
+        const distance = this.countDownDate - now;
+  
+        if (distance >= 0) {
+          const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+          this.countdownDays = `${days}`;
+          this.countdownHours = ` ${hours}`;
+          this.countdownMinutes = `${minutes}`;
+          this.countdownSeconds = `${seconds}`;
+        } else {
+          this.countdownText = "EXPIRED";
+        }
+      },
     },
 }
 </script>

@@ -31,7 +31,7 @@
                             <NuxtLink class="hover:underline" to="/workshops">Workshops</NuxtLink>
                           </li>
                           <li>
-                            <NuxtLink to="/team">Team</NuxtLink>
+                            <NuxtLink class="hover:underline" to="/team">Team</NuxtLink>
                           </li>
                       </ul>
                 </div>

@@ -45,15 +45,18 @@
   </header>
   <!-- Mobile Menu (Hidden by default) -->
   <div v-show="isMobileMenuVisible"
-        class=" md:hidden w-full left-0 right-0 grid items-center justify-center"
-        style=" position: absolute; top:0; height:100%; z-index: 2; background-color: rgba(4, 4, 36, 0.86);">
-        <div class="grid">
+        class=" md:hidden shadow-lg w-full left-0 right-0 grid items-center justify-center"
+        style=" position: absolute; top:0;  z-index: 2; background-color: rgba(4, 4, 36, 0.86);">
+        <div class="grid mt-36 mb-10">
           <NuxtLink @click="toggleMobileMenu();" class="mt-4 mobileNavbarLink" to="/">Home</NuxtLink>
           <NuxtLink @click="toggleMobileMenu();" class="mt-4 mobileNavbarLink" to="/about">About</NuxtLink>
+          <NuxtLink @click="toggleMobileMenu();" class="mt-4 mobileNavbarLink" to="/team">Team</NuxtLink>
           <NuxtLink @click="toggleMobileMenu();" class="mt-4 mobileNavbarLink" to="/events">Events</NuxtLink>
+          <NuxtLink @click="toggleMobileMenu();" class="mt-4 mobileNavbarLink" to="/workshops">Workshops</NuxtLink>
           <NuxtLink @click="toggleMobileMenu();" class="mt-4 mobileNavbarLink" to="/registration">SignUp</NuxtLink>
           <NuxtLink @click="toggleMobileMenu();" class="mt-4 mobileNavbarLink" to="/registration">LogIn</NuxtLink>
           <NuxtLink @click="toggleMobileMenu();" class="mt-4 mobileNavbarLink" to="/merchandise">Merchandise</NuxtLink>   
+          <NuxtLink @click="toggleMobileMenu();" class="mt-4 mobileNavbarLink" to="/accomodation">Accomodation</NuxtLink>
         </div>
     </div>
 </template>
@@ -75,6 +78,10 @@
 </script>
 
 <style scoped>
+@font-face {
+  font-family: Market_Deco;
+  src: url(../assets/fonts/Market_Deco.ttf);
+}
   #navbar{
     background: rgba(4, 4, 36, 0.86);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -88,11 +95,11 @@ li{
     margin-right: 2.1rem;
     font-weight: 600;
     color: white;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Market_Deco';
     text-decoration: none;
     border: none;
     background: none;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 li::before {
@@ -180,8 +187,9 @@ li:hover::after, li:hover::before {
   outline: none;
   border-radius: 0.4rem;
   cursor: pointer;
-  font-family: 'forgotten-futurist-bd';
+  font-family: 'Market_Deco';
   text-transform: uppercase;
+  text-align: center;
   background-color: rgb(14, 14, 26);
   color: rgb(255, 255, 255);
   font-weight: 800;
