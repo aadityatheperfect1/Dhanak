@@ -95,7 +95,8 @@
   width: 90%;
 }
 .event-name{
-        color: #474747;
+        /* color: #474747; */
+        color: #EAF4D4;
         font-size: 64px;
         text-align: center;
         font-family: 'blackrush';
