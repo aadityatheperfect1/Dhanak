@@ -6,7 +6,6 @@
       <main class="container mx-auto mt-4">
         <div class="grid grid-cols-3 gap-4">
           <!-- Your grid items go here -->
-          
           <slot></slot>
         </div>
       </main>

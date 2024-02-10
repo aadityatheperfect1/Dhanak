@@ -1,12 +1,12 @@
 <template>
         <section class="grid h-full justify-center items-center bg-cover bg-top DhanakIntro">
-            <h1 class="text-2xl sm:text-4xl md:text-4xl lg:text-6xl xl:text-7xl mt-8 sm:mt-14 md:mt-16 lg:mt-24 xl:mt-32" style=" font-family: 'Vintage'; text-align: center; color: #EAF4D4; ">Retro Revival</h1>
-            <h2 class="text-3xl sm:text-4xl md:text-4xl lg:text-6xl xl:text-7xl mt-3 sm:mt-6 md:mt-8 lg:mt-14 xl:mt-16" style="font-family: 'Market_Deco'; text-align: center; text-shadow: 0px 0px 4px #000000; color: #EAF4D4;">
+            <h1 class="text-2xl sm:text-4xl md:text-4xl lg:text-6xl xl:text-7xl mt-8 sm:mt-14 md:mt-16 lg:mt-24 xl:mt-32" style=" font-family: 'Vintage'; text-align: center; color: #FFF9C9; ">Retro Revival</h1>
+            <h2 class="text-4xl sm:text-4xl md:text-4xl lg:text-6xl xl:text-7xl mt-3 sm:mt-6 md:mt-8 lg:mt-14 xl:mt-16" style="font-family: 'Market_Deco'; font-weight: 500; text-align: center; text-shadow: 0px 0px 4px #000000; color: #FFF9C9;">
                 March 15th to 18th
             </h2>
-            <div style="font-family: 'VarelaRound-Regular'; font-weight:500; color: #EAF4D4; text-shadow: 1px 1px 8px #000000;" class="flex justify-center mb-3 mt-3 sm:mt-4 md:mt-6 lg:mt-7 xl:mt-7">
+            <div style="font-family: 'Ka1'; color: #FFF9C9; text-shadow: 1px 1px 8px #000000;" class="flex justify-center mb-3 mt-3 sm:mt-4 md:mt-6 lg:mt-7 xl:mt-7">
               <div class="grid text-center justify-center items-center">
-                  <div class="text-6xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-6xl">
+                  <div class="text-4xl sm:text-3xl md:text-6xl lg:text-6xl xl:text-6xl mb-2">
                     {{ countdownDays }}
                   </div>
                 <div class="uppercase text-sm sm:text-sm md:text-sm lg:text-sm xl:text-sm">
@@ -17,7 +17,7 @@
                     :
               </div>
               <div class="grid text-center justify-center items-center">
-                  <div class="text-6xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-6xl">
+                  <div class="text-4xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-6xl">
                     {{ countdownHours }}
                   </div>
                 <div class="uppercase text-sm sm:text-sm md:text-sm lg:text-sm xl:text-sm">
@@ -28,7 +28,7 @@
                     :
               </div>
               <div class="grid text-center justify-center items-center">
-                  <div class="text-6xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-6xl">
+                  <div class="text-4xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-6xl">
                     {{ countdownMinutes }}
                   </div>
                 <div class="uppercase text-sm sm:text-sm md:text-sm lg:text-sm xl:text-sm">
@@ -39,7 +39,7 @@
                     :
               </div>
               <div class="grid text-center justify-center items-center">
-                  <div class="text-6xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-6xl">
+                  <div class="text-4xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-6xl">
                     {{ countdownSeconds }}
                   </div>
                 <div class="uppercase text-sm sm:text-sm md:text-sm lg:text-sm xl:text-sm">
@@ -47,7 +47,7 @@
                 </div>
               </div>
             </div>
-            <div style="font-family: 'Market_Deco'; font-weight:500; color: #EAF4D4; text-shadow: 1px 1px 8px #000000;" class="flex justify-center text-3xl sm:text-3xl md:text-6xl lg:text-6xl xl:text-6xl mb-3 sm:mt-4 md:mt-6 lg:mt-7 xl:mt-1">
+            <div style="font-family: 'Market_Deco'; font-weight:500; color: #FFF9C9; text-shadow: 1px 1px 8px #000000;" class="flex justify-center text-3xl sm:text-3xl md:text-6xl lg:text-6xl xl:text-6xl mb-3 sm:mt-4 md:mt-6 lg:mt-7 xl:mt-1">
               To Go!
             </div>
         </section>
@@ -94,6 +94,14 @@
 @font-face {
     font-family: VarelaRound-Regular;
     src: url(../assets/fonts/VarelaRound-Regular.ttf);
+}
+@font-face {
+    font-family: Ka1;
+    src: url(../assets/fonts/ka1.ttf);
+}
+@font-face {
+    font-family: Franchise;
+    src: url(../assets/fonts/Franchise.ttf);
 }
 
     .text-overlay {

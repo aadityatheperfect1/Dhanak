@@ -3,7 +3,7 @@
         <div class="mx-auto w-full max-w-screen-xxl p-3 py-6 lg:py-8" style="background-color: #000000;" >
             <div style=" display: flex; justify-content: space-around; margin:10px; justify-items: center; background-color: #000000;">
               <div class="container sm:grid-col-1 md:grid-col-3 lg:grid-col-3 sm:justify-center xl:flex xl:justify-around lg:flex lg:justify-around md:flex md:justify-around">
-                <div class="  mt-4 ">
+                <div class="justify-center items-center md:w-1/2 lg:w-1/3 xl:w-1/3 mt-4  mt-4 ">
                 <h2 class="text-sm font-semibold text-gray-900 uppercase dark:text-white" style="text-align: center;margin-bottom: 1rem;">Links</h2>
                   <ul style="text-align: center;" class="text-gray-500 dark:text-gray-400 font-medium" >
                           <li>
@@ -35,8 +35,8 @@
                           </li>
                       </ul>
                 </div>
-                <div class="justify-center items-center mt-4">
-                  <div style="background-color: #000000;">
+                <div class="justify-center items-center md:w-1/2 lg:w-1/3 xl:w-1/4 mt-4 mt-4">
+                  <div>
                       <h2 class=" mb-1 text-sm font-semibold text-gray-900 uppercase dark:text-white" style="text-align: center;margin-bottom: 1rem;" >Follow us</h2>
                       <ul style="text-align: center;" class="text-gray-500 dark:text-gray-400 font-medium">
                           <li>
@@ -48,8 +48,8 @@
                       </ul>
                   </div>
                 </div>
-                <div class="mt-4" >
-                  <div style="background-color: #000000;">
+                <div class=" justify-center items-center md:w-1/2 lg:w-1/3 xl:w-1/3 mt-4 mt-4" >
+                  <div>
                       <h2 class=" mb-1 text-sm font-semibold text-gray-900 uppercase dark:text-white" style="text-align: center;margin-bottom: 1rem;">Legal</h2>
                       <ul style="text-align: center;" class="text-gray-500 dark:text-gray-400 font-medium">
                           <li>
@@ -65,17 +65,17 @@
               </div>
           </div>
           <hr class=" border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-          <div class="mx-auto w-full max-w-screen-xxl container sm:grid-col-1 sm:justify-center xl:flex xl:justify-around lg:flex lg:justify-around md:flex md:justify-around" style="background-color: #000000;">
-            <div style="display:flex; align-item:center; padding-top:10px; margin:10px; justify-content: center;">
+          <div class="mx-auto w-full max-w-screen-xxl container sm:grid-col-1 md:grid-col-3 lg:grid-col-3 xl:grid-col3 sm:justify-center xl:flex xl:justify-around lg:flex lg:justify-around md:flex md:justify-around" style="background-color: #000000;">
+            <div class="md:w-1/2 lg:w-1/3 xl:w-1/3" style="display:flex; align-item:center; padding-top:10px; margin:10px; justify-content: center;">
               <span class="text-sm flex items-center justify-center text-gray-500 sm:text-center dark:text-gray-400">© 2024 Copyright: <a href="https://flowbite.com/" class="hover:underline">Dhanak 2024</a>
               </span>
             </div>
-              <div class="flex items-center justify-around">
+              <div class="flex items-center md:w-1/2 lg:w-1/3 xl:w-1/3  justify-around">
                 <a href="https://iist.dhanak.org.in/">
                   <img src="../assets/dhanak_logo_1.png" height="70vh" width="60vh" alt="Dhanak Logo" />
                 </a>
               </div>
-              <div class="flex items-center justify-center mt-4 gap-6">
+              <div class="flex items-center justify-center md:w-1/2 lg:w-1/3 xl:w-1/3 mt-4 gap-6">
                   <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
                       <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
                             <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd"/>

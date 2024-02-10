@@ -29,7 +29,7 @@
           style=" width:100%;">
           <div style="width: 36px; height: 32px;">
           </div>
-            <NuxtLink @click="toggleMobileMenu();" to="/" style="z-index: 3; !important">
+            <NuxtLink @click="toggleMobileMenu();" style="z-index: 3; !important">
               <img height="120vh" width="110vh" src="../assets/dhanak_logo.png">
             </NuxtLink>
             <button id="mobile-menu-btn" style=" z-index: 3;"
@@ -46,8 +46,8 @@
   <!-- Mobile Menu (Hidden by default) -->
   <div v-show="isMobileMenuVisible"
         class=" md:hidden shadow-lg w-full left-0 right-0 grid items-center justify-center"
-        style=" position: absolute; top:0;  z-index: 2; background-color: rgba(4, 4, 36, 0.86);">
-        <div class="grid mt-36 mb-10">
+        style=" position: fixed; top:0;  z-index: 2; background-color: rgba(4, 4, 36, 0.86);">
+        <div class="grid mt-32 mb-10">
           <NuxtLink @click="toggleMobileMenu();" class="mt-4 mobileNavbarLink" to="/">Home</NuxtLink>
           <NuxtLink @click="toggleMobileMenu();" class="mt-4 mobileNavbarLink" to="/about">About</NuxtLink>
           <NuxtLink @click="toggleMobileMenu();" class="mt-4 mobileNavbarLink" to="/team">Team</NuxtLink>
