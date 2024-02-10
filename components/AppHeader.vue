@@ -7,7 +7,7 @@
             <li><NuxtLink to="/">Home</NuxtLink></li>
             <li><NuxtLink to="/about">About</NuxtLink></li>
             <li><NuxtLink to="/team">Team</NuxtLink></li>
-            <li><NuxtLink to="/registration">Register</NuxtLink></li>
+            <li><NuxtLink to="/events">Events</NuxtLink></li>
           </ul>
         </div>
         <div class="lg:flex col-span-2 justify-center items-center">
@@ -15,10 +15,10 @@
         </div>
         <div class="col-span-5 flex items-center">
           <ul class="items-center justify-end lg:flex">
-            <li><NuxtLink to="/events">Events</NuxtLink></li>
             <li><NuxtLink to="/merchandise">Merch</NuxtLink></li>
             <li><NuxtLink to="/workshops">Workshops</NuxtLink></li>
             <li><NuxtLink to="/accomodation">Accomodation</NuxtLink></li>
+            <li><NuxtLink to="/registration">Register</NuxtLink></li>
           </ul>
         </div>
       </div>
@@ -53,10 +53,10 @@
           <NuxtLink @click="toggleMobileMenu();" class="mt-4 mobileNavbarLink" to="/team">Team</NuxtLink>
           <NuxtLink @click="toggleMobileMenu();" class="mt-4 mobileNavbarLink" to="/events">Events</NuxtLink>
           <NuxtLink @click="toggleMobileMenu();" class="mt-4 mobileNavbarLink" to="/workshops">Workshops</NuxtLink>
-          <NuxtLink @click="toggleMobileMenu();" class="mt-4 mobileNavbarLink" to="/registration">SignUp</NuxtLink>
-          <NuxtLink @click="toggleMobileMenu();" class="mt-4 mobileNavbarLink" to="/registration">LogIn</NuxtLink>
           <NuxtLink @click="toggleMobileMenu();" class="mt-4 mobileNavbarLink" to="/merchandise">Merchandise</NuxtLink>   
           <NuxtLink @click="toggleMobileMenu();" class="mt-4 mobileNavbarLink" to="/accomodation">Accomodation</NuxtLink>
+          <NuxtLink @click="toggleMobileMenu();" class="mt-4 mobileNavbarLink" to="/registration">LogIn</NuxtLink>
+          <NuxtLink @click="toggleMobileMenu();" class="mt-4 mobileNavbarLink" to="/registration">SignUp</NuxtLink>
         </div>
     </div>
 </template>
