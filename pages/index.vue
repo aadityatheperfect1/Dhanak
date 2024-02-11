@@ -1,76 +1,35 @@
 <template>
-    <header class="DhanakIntro h-screen bg-cover bg-top bg-center" data-scroll-container="true">
-      <section class="grid mb-0  ">
-          <div class=" mt-56 sm:mt-40 md:mt-32 lg:mt-32 xl:mt-32 grid justify-center items-center">
-            <img class="max-w-xs sm:w-full md:max-w-2xl lg:max-w-2xl" src="../assets/Dhanak_text.png" alt="dhanak_text">
-            <div class="flex text-center justify-center items-center text-4xl sm:text-4xl md:text-6xl lg:text-6xl xl:text-7xl mt-4 sm:mt-4 md:mt-4 lg:mt-4 xl:mt-4" style=" font-family: 'Vintage'; text-align: center; color: #FFF9C9; ">
+    <header class="DhanakIntro h-screen bg-cover bg-center" data-scroll-container="true">
+      <img class="Dhanak_landing" src="../assets/dhanak_landing.jpg" alt="dhanak landing">
+      <section class="grid mb-0">
+          <div class=" mt-48 sm:mt-56 md:mt-56 lg:mt-32 xl:mt-40 grid justify-center items-center">
+            <img class="max-w-sm sm:w-full md:max-w-2xl lg:max-w-2xl" src="../assets/Dhanak_text.png" alt="dhanak_text">
+            <div class="flex text-center justify-center items-center text-4xl sm:text-4xl md:text-6xl lg:text-6xl xl:text-7xl mt-4 sm:mt-8 md:mt-12 lg:mt-4 xl:mt-4" style=" font-family: 'Vintage'; text-align: center; color: #FFF9C9; ">
               Retro Revival
             </div>
-            <div style="font-family: 'oddval'; color: white;" class="text-4xl text-white md:text-[1/5rem] text-center font-normal">
+            <div style="font-family: 'oddval'; color: white;" class="text-4xl mt-20 sm:mt-16 md:mt-12 lg:mt-0 xl:mt-0 text-white md:text-[1/5rem] text-center font-normal">
               {{ countdownDays }} days to go !!
             </div>
-            <div class="mt-32 sm:mt-28 md:mt-6 lg:mt-10 xl:mt-8">
-              <h2 class="text-3xl md:text-[3.5rem] text-center" style="font-family: 'oddval'; font-weight: lighter; text-align: center; text-shadow: 0px 0px 4px #000000; color: white;">
+            <div class="mt-24 sm:mt-28 md:mt-32 lg:mt-10 xl:mt-8">
+              <h2 class="text-4xl sm:text-3xl md:text-[3.5rem] text-center" style="font-family: 'oddval'; font-weight: lighter; text-align: center; text-shadow: 0px 0px 4px #000000; color: white;">
                 15th to 18th March
             </h2>
             </div>
           </div>
-            <!-- <div style="font-family: 'Ka1'; color: #FFF9C9; text-shadow: 1px 1px 8px #000000;" class="flex justify-center mb-3 mt-3 sm:mt-4 md:mt-6 lg:mt-7 xl:mt-7">
-              <div class="grid text-center justify-center items-center">
-                  <div class="text-4xl sm:text-3xl md:text-6xl lg:text-6xl xl:text-6xl mb-2">
-                    {{ countdownDays }}
-                  </div>
-                <div class="uppercase text-sm sm:text-sm md:text-sm lg:text-sm xl:text-sm">
-                  Days
-                </div>
-              </div>
-              <div class="justify-top text-6xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-6xl">
-                    :
-              </div>
-              <div class="grid text-center justify-center items-center">
-                  <div class="text-4xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-6xl mb-2">
-                    {{ countdownHours }}
-                  </div>
-                <div class="uppercase text-sm sm:text-sm md:text-sm lg:text-sm xl:text-sm">
-                  hours
-                </div>
-              </div>
-              <div class="justify-top text-6xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-6xl">
-                    :
-              </div>
-              <div class="grid text-center justify-center items-center">
-                  <div class="text-4xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-6xl mb-2">
-                    {{ countdownMinutes }}
-                  </div>
-                <div class="uppercase text-sm sm:text-sm md:text-sm lg:text-sm xl:text-sm">
-                  minutes
-                </div>
-              </div>
-              <div class="justify-top text-6xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-6xl">
-                    :
-              </div>
-              <div class="grid text-center justify-center items-center">
-                  <div class="text-4xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-6xl mb-2">
-                    {{ countdownSeconds }}
-                  </div>
-                <div class="uppercase text-sm sm:text-sm md:text-sm lg:text-sm xl:text-sm">
-                  seconds
-                </div>
-              </div>
-            </div>
-            <div style="font-family: 'Market_Deco'; font-weight:500; color: #FFF9C9; text-shadow: 1px 1px 8px #000000;" class="flex justify-center text-3xl sm:text-3xl md:text-6xl lg:text-6xl xl:text-6xl mb-3 sm:mt-4 md:mt-6 lg:mt-7 xl:mt-1">
-              To Go!
-            </div> -->
-            <div class="flex grid-rows-1 justify-center md:grid md:grid-cols-3 xl:grid-cols-3 sm:grid-rows-1 mt-20 sm:mt-20 md:mt-4 lg:mt-16 xl:mt-12 items-center px-[4rem] w-screen">
+            <div class="flex grid-rows-1 justify-center md:grid md:grid-cols-3 xl:grid-cols-3 sm:grid-rows-1 mt-8 sm:mt-12 md:mt-20 lg:mt-16 xl:mt-12 items-center px-[4rem] w-screen">
               <div class="md:flex flex-row hidden sm:hidden md:inline-block lg:inline-block xl:inline-block text-[1.5rem]">
                 <a class="justify-start hidden sm:hidden md:inline-block lg:inline-block xl:inline-block items-center" href="https://youtu.be/7-WTO92O6xQ?si=AQFtNp-32mbIeAQh">
                   <p style="font-family: 'oddval';" class="text-[1.5rem] text-white hover:text-[#EC941C] font-oddval">Dhanak '24: Theme</p>
                 </a>
               </div>
-            
-              <div class="flex justify-center w-full gap-8">
+              <div class="flex justify-center w-full">
                 <NuxtLink to="/registration" style="font-family: 'oddval';" class="mx-[-0.5rem] md:my-[0.5rem] w-fit justify-center pointer-cursor-element rounded-lg text-[#0d0f04] text-center text-[1rem] md:text-[1.5rem] whitespace-nowrap font-[700] leading-[100%] bg-[#EC941C] p-4 px-6 __className_587f35 pointer-cursor-element">
-                Register
+                  Register
+                </NuxtLink>
+              </div>
+              <div class="flex justify-center w-full md:hidden lg-hidden xl-hidden">
+                <NuxtLink to="/events" style="font-family: 'oddval';" class="mx-[-0.5rem] md:my-[0.5rem] w-fit justify-center pointer-cursor-element rounded-lg text-[#0d0f04] text-center text-[1rem] md:text-[1.5rem] whitespace-nowrap font-[700] leading-[100%] bg-[#EC941C] p-4 px-6 __className_587f35 pointer-cursor-element">
+                  Events
                 </NuxtLink>
               </div>
               <div class="flex md:flex justify-end hidden md:block w-full gap-8">
@@ -98,7 +57,7 @@
             </h1>
         </div>
         <div class=" flex items-center justify-center">
-    <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-8 mx-2 my-4">
+    <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mx-2 my-4">
       <!-- Event Cards -->
       <div v-for="item in apiData" :key="item.id" class="event-card  overflow-hidden mx-2 my-4">
         <div class="eventImage">
@@ -146,6 +105,20 @@
     src: url(../assets/fonts/Oddval-SemiBold.otf);
 }
 
+.Dhanak_landing{
+  background-color: transparent;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  -o-object-position: center;
+  object-position: center;
+  -o-object-fit: cover;
+  object-fit: cover;
+  color:transparent;
+  z-index: -1;
+  line-height: inherit;
+}
+
     .text-overlay {
         font-size: 58px;
       transform: translate(-50%, -50%);
@@ -154,6 +127,7 @@
       font-family: 'Vintage';
     } 
     .DhanakIntro{
+      
         /* background-image: url(../assets/HomePagePattern.svg); */
 
         /* background-image: repeating-radial-gradient(  #0c0a0a 80%,#338a7d 90%,#086454 90%);
@@ -161,7 +135,7 @@
 
         /* background-image: repeating-radial-gradient(  #DBDAD5 87%,#9e9d97 90%);
   background-size: 50px 50px; */
-  background-image: url(../assets/dhanak_landing.jpg);
+  /* background-image: url(../assets/dhanak_landing.jpg); */
 
     }
     .events{
