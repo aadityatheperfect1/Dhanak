@@ -1,38 +1,55 @@
 <template>
-    <header id="navbar" class="flex pt-2 justify-center backdrop-blur border-b border-gray-200 dark:border-gray-800 -mb-px sticky top-0 z-50 lg:mb-0 lg:border-0">
-    <div class="lg:flex max-w-7xl hidden items-center">
-      <div class="grid grid grid-cols-12 gap-4">
-        <div class="col-span-5 flex justify-end">
+    <header id="navbar" style="border-bottom: solid 1px rgb(50, 50, 50);" class="fixed text-[14px] font-oddval font-[400] top-0 h-[64px] z-50 flex items-center bg-[#111111] w-screen">
+    <div class="flex w-screen items-center justify-between">
+        <div class=" items-center text-white ml-[2rem]">
+          <NuxtLink class="hidden  xl:inline-block" to="https://www.iist.ac.in/"><img height="120vh" width="200vh" src="../assets/IIST_LOGO_lg.svg" alt="Navbar logo"></NuxtLink>
+          <NuxtLink to="https://www.iist.ac.in/"><img class="inline-block xl:hidden h-[2.5rem]" src="../assets/IIST_LOGO_sm.png" alt=""></NuxtLink>
+        </div>
+        <div class=" my-auto flex  absolute left-[42%] md:left-[45%] lg:left-[47%] xl:left-[48%]">
+          <NuxtLink to="https://dhanak.iist.org.in/"><img class="max-h-[3rem] md:max-h-[3rem]" src="../assets/dhanak_logo_sm.svg" alt="Navbar logo"></NuxtLink>
+        </div>
+        <div class="mr-[2rem] h-full flex lg:items-right">
+          <div class=" flex items-center gap-3">
+              <NuxtLink class="hidden xl:inline-block pointer-cursor-element block mt-4 p-2 px-4  lg:mt-0 text-[#ffffff] hover:text-white hover:bg-[#1A1A1A] hover:rounded-lg mr-2" to="/">Home</NuxtLink>
+              <!-- <li><NuxtLink to="/about">About</NuxtLink></li> -->
+              <!-- <li><NuxtLink to="/team">Team</NuxtLink></li> -->
+              <NuxtLink class="hidden xl:inline-block pointer-cursor-element block mt-4 p-2 px-4  lg:mt-0 text-[#ffffff] hover:text-white hover:bg-[#1A1A1A] hover:rounded-lg mr-2" to="/workshops">Workshops</NuxtLink>
+              <NuxtLink class="hidden xl:inline-block pointer-cursor-element block mt-4 p-2 px-4  lg:mt-0 text-[#ffffff] hover:text-white hover:bg-[#1A1A1A] hover:rounded-lg mr-2" to="/merchandise">Merch</NuxtLink>
+              <NuxtLink class="hidden xl:inline-block pointer-cursor-element block mt-4 p-2 px-4  lg:mt-0 text-[#ffffff] hover:text-white hover:bg-[#1A1A1A] hover:rounded-lg mr-2" to="/accomodation">Accomodation</NuxtLink>
+              <NuxtLink class="hidden xl:inline-block block mt-4 mx-2 p-2 px-4 bg-[#EC941C] rounded-lg  lg:mt-0 text-black font-[600] hover:bg-[#c8790a] mr-2 pointer-cursor-element" to="/events">Events</NuxtLink>
+              <button style=" z-index: 5;"
+                class="text-white block xl:hidden hover:text-gray-300 focus:outline-none focus:text-gray-300">
+                <input id="checkbox" type="checkbox" v-model="isMobileMenuVisible" @click="toggleMobileMenu();">
+                  <label class="toggle" for="checkbox">
+                      <div id="bar1" class="bars"></div>
+                      <div id="bar2" class="bars"></div>
+                      <div id="bar3" class="bars"></div>
+                  </label>
+              </button>
+            </div>
+        </div>
+        <!-- <div class="col-span-5 flex items-center">
           <ul class="items-center justify-end lg:flex">
-            <li><NuxtLink to="/">Home</NuxtLink></li>
-            <li><NuxtLink to="/about">About</NuxtLink></li>
-            <li><NuxtLink to="/team">Team</NuxtLink></li>
             <li><NuxtLink to="/events">Events</NuxtLink></li>
-          </ul>
-        </div>
-        <div class="lg:flex col-span-2 justify-center items-center">
-          <NuxtLink to="/"><img height="120vh" width="110vh" src="../assets/dhanak_logo.png" alt="Navbar logo"></NuxtLink>
-        </div>
-        <div class="col-span-5 flex items-center">
-          <ul class="items-center justify-end lg:flex">
             <li><NuxtLink to="/merchandise">Merch</NuxtLink></li>
-            <li><NuxtLink to="/workshops">Workshops</NuxtLink></li>
             <li><NuxtLink to="/accomodation">Accomodation</NuxtLink></li>
             <li><NuxtLink to="/registration">Register</NuxtLink></li>
           </ul>
-        </div>
-      </div>
+        </div> -->
+      
     </div>
 
     <!-- Hamburger Menu for Small Screens -->
-    <div class="lg:hidden xl:hidden flex sticky top-0 z-50 items-center justify-around" 
+    <!-- <div class="flex sticky top-0 z-50 items-center justify-between" 
           style=" width:100%;">
-          <div style="width: 36px; height: 32px;">
+          <div class="ml-[2rem]">
+            <NuxtLink to="https://www.iist.ac.in/"><img class="h-[2.25rem]" src="../assets/IIST_LOGO_sm.png" alt=""></NuxtLink>
           </div>
-            <NuxtLink @click="toggleMobileMenu();" style="z-index: 3; !important">
-              <img height="120vh" width="110vh" src="../assets/dhanak_logo.png">
+            <NuxtLink to="https://dhanak.iist.org.in/" @click="toggleMobileMenu();" style="z-index: 3; !important">
+              <img class="my-auto flex max-h-[3rem] md:max-h-[3rem] md:absolute left-[47%] lg:left-[47%]" src="../assets/dhanak_logo_sm.png">
             </NuxtLink>
-            <button id="mobile-menu-btn" style=" z-index: 3;"
+            <div class="block  mr-[2rem]">
+              <button id="mobile-menu-btn" style=" z-index: 5;"
               class="text-white hover:text-gray-300 focus:outline-none focus:text-gray-300">
               <input id="checkbox" type="checkbox" v-model="isMobileMenuVisible" @click="toggleMobileMenu();">
                 <label class="toggle" for="checkbox">
@@ -41,13 +58,14 @@
                     <div id="bar3" class="bars"></div>
                 </label>
             </button>
-    </div>
+            </div>
+    </div> -->
   </header>
   <!-- Mobile Menu (Hidden by default) -->
   <div v-show="isMobileMenuVisible"
-        class=" md:hidden shadow-lg w-full left-0 right-0 grid items-center justify-center"
-        style=" position: fixed; top:0;  z-index: 2; background-color: rgba(4, 4, 36, 0.86);">
-        <div class="grid mt-32 mb-10">
+        class=" shadow-lg w-full left-0 right-0 grid items-center justify-center"
+        style=" position: fixed; top:0;  z-index: 2; background-color: #111111e2;">
+        <div class="grid mt-20 mb-10">
           <NuxtLink @click="toggleMobileMenu();" class="mt-4 mobileNavbarLink" to="/">Home</NuxtLink>
           <NuxtLink @click="toggleMobileMenu();" class="mt-4 mobileNavbarLink" to="/about">About</NuxtLink>
           <NuxtLink @click="toggleMobileMenu();" class="mt-4 mobileNavbarLink" to="/team">Team</NuxtLink>
@@ -83,17 +101,16 @@
   src: url(../assets/fonts/Market_Deco.ttf);
 }
   #navbar{
-    background: rgba(4, 4, 36, 0.86);
+    /* background: rgba(4, 4, 36, 0.86);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5.1px);
     -webkit-backdrop-filter: blur(5.1px);
-    border: 1px solid rgba(4, 4, 36, 0.24);
+    border: 1px solid rgba(4, 4, 36, 0.24); */
 }
 
-li{
-    margin-left: 2.1rem;
-    margin-right: 2.1rem;
-    font-weight: 600;
+/* li{
+    margin-left: 1rem;
+    margin-right: 1rem;
     color: white;
     font-family: 'Market_Deco';
     text-decoration: none;
@@ -117,7 +134,7 @@ li::after, li::before {
 
 li:hover::after, li:hover::before {
   width: 100%;
-}
+} */
 
 
 #checkbox {
@@ -190,7 +207,7 @@ li:hover::after, li:hover::before {
   font-family: 'Market_Deco';
   text-transform: uppercase;
   text-align: center;
-  background-color: rgb(14, 14, 26);
+  background-color: #111111;
   color: rgb(255, 255, 255);
   font-weight: 800;
   /* box-shadow: 0px 0px 60px #1C9C8C; */

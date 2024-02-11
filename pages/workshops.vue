@@ -1,10 +1,12 @@
 <template>
-  <section class="workshops">
+  <div class="workshops">
+  </div>
     <div class="flex justify-center items-center">
       <h1 class="mt-8" style="font-family: Market_Deco; text-shadow: 2px 2px 10px #000000; color: #EAF4D4; font-weight: bolder; font-size: 64px;">
           workshops
       </h1>
     </div>
+    
     <div class=" flex items-center justify-center">
       <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-8 mx-2 my-4">
         <!-- workshop Cards -->
@@ -20,8 +22,8 @@
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    
+  </div>
 </template>
 
 
@@ -29,11 +31,6 @@
 @font-face {
   font-family: Market_Deco;
   src: url(../assets/fonts/Market_Deco.ttf);
-}
-
-.comingSoon{
-background-image: repeating-radial-gradient(  #0c0a0a 80%,#338a7d 90%,#086454 90%);
-background-size: 65px 65px;
 }
 
 .workshops{

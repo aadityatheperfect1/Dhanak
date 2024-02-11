@@ -1,5 +1,6 @@
 <template>
-  <section class="events">
+  
+  <div class="events">
     <div class="flex justify-center items-center">
       <h1 class="mt-8" style="font-family: Market_Deco; text-shadow: 2px 2px 10px #000000; color: #EAF4D4; font-weight: bolder; font-size: 64px;">
           Events
@@ -8,20 +9,28 @@
     <div class=" flex items-center justify-center">
       <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-8 mx-2 my-4">
         <!-- Event Cards -->
-        <div v-for="item in apiData" :key="item.id" class="event-card  overflow-hidden mx-2 my-4">
+          <div v-for="item in apiData" :key="item.id" class="event-card  overflow-hidden mx-2 my-4">
           <div class="eventImage">
-            <img :src="item.image" :alt="`Event ${index + 1}`" >
-            <h1 class="event-name mt-6" >
-            {{ item.name.split(":")[0] }}
-            <!-- <br>
-            
-            {{ item.name.split(":")[1] }} -->
-            </h1>
+            <!-- <NuxtLink :to="`/eventpage/${item.id}`"> -->
+            <NuxtLink :to="`/eventpage`">
+            <!-- <NuxtLink :to="{ name: 'eventpage-id', params: { someParam: item.id } }"> -->
+                <img :src="item.image" :alt="`Event ${index + 1}`" >
+            </NuxtLink>
+            <NuxtLink :to="`/eventpage`">
+            <!-- <NuxtLink :to="`/eventpage/${item.id}`"> -->
+            <!-- <NuxtLink :to="{ name: 'eventpage-id', params: { someParam: item.id  } }"> -->
+              <h1 class="event-name mt-6" >
+              {{ item.name.split(":")[0] }}
+              <!-- <br>
+              {{ item.name.split(":")[1] }} -->
+              </h1>
+            </NuxtLink>
           </div>
         </div>
+        
       </div>
     </div>
-  </section>
+  </div>
 </template>
 
 

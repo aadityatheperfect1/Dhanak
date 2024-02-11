@@ -1,6 +1,6 @@
 <!-- Name of this file is merchandise.vue -->
 <template>
-  <section class="merchandise">
+  <div class="merchandise">
     <div class="flex justify-center items-center">
       <h1 class="mt-8" style="font-family: Market_Deco; text-shadow: 2px 2px 10px #000000; color: #EAF4D4; font-weight: bolder; font-size: 64px;">
           Merchandise
@@ -10,7 +10,9 @@
       <ThreeCanvas :currentModelURL="currentModelURL" @selectImage="updateModel" />
       <TshirtGallery />
     </div>
-  </section>
+  </div>
+    
+
 </template>
 
 <script>

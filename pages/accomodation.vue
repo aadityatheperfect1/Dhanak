@@ -1,14 +1,13 @@
 <template>
-  <section>
-    <div class="flex comingSoon justify-center items-center">
+  
+    <div class="flex comingSoonAccomodation justify-center items-center">
       <h1 style="text-align: center;">
-      Coming Soon.
-      <br>
-      Stay Tuned!
-    </h1>
+        Coming Soon.
+        <br>
+        Stay Tuned!
+      </h1>
     </div>
     
-  </section>
 </template>
 
 
@@ -26,7 +25,7 @@ color: #EAF4D4;
 text-shadow: 2px 2px 10px #000000;
 }
 
-.comingSoon{
+.comingSoonAccomodation{
 background-image: repeating-radial-gradient(  #0c0a0a 80%,#338a7d 90%,#086454 90%);
 background-size: 65px 65px;
 }
