@@ -5,7 +5,7 @@
           <NuxtLink class="hidden  xl:inline-block" to="https://www.iist.ac.in/"><img height="120vh" width="200vh" src="../assets/IIST_LOGO_lg.svg" alt="Navbar logo"></NuxtLink>
           <NuxtLink to="https://www.iist.ac.in/"><img class="inline-block xl:hidden h-[2.5rem]" src="../assets/IIST_LOGO_sm.png" alt=""></NuxtLink>
         </div>
-        <div class=" my-auto flex  absolute left-[42%] md:left-[45%] lg:left-[47%] xl:left-[48%]">
+        <div class=" my-auto flex  absolute left-[45%] md:left-[48%] lg:left-[48%] xl:left-[48.5%]">
           <NuxtLink to="https://dhanak.iist.org.in/"><img class="max-h-[3rem] md:max-h-[3rem]" src="../assets/dhanak_logo_sm.svg" alt="Navbar logo"></NuxtLink>
         </div>
         <div class="mr-[2rem] h-full flex lg:items-right">
