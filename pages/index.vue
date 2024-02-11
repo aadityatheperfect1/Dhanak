@@ -1,6 +1,6 @@
 <template>
     <header class="DhanakIntro h-screen bg-cover bg-center" data-scroll-container="true">
-      <img class="Dhanak_landing" src="../assets/dhanak_landing.jpg" alt="dhanak landing">
+      <img class="Dhanak_landing" src="../assets/dhanak_landing.png" alt="dhanak landing">
       <section class="grid mb-0">
           <div class=" mt-48 sm:mt-56 md:mt-56 lg:mt-32 xl:mt-40 grid justify-center items-center">
             <img class="max-w-sm sm:w-full md:max-w-2xl lg:max-w-2xl" src="../assets/Dhanak_text.png" alt="dhanak_text">
