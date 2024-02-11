@@ -73,7 +73,7 @@
           <NuxtLink @click="toggleMobileMenu();" class="mt-4 mobileNavbarLink" to="/workshops">Workshops</NuxtLink>
           <NuxtLink @click="toggleMobileMenu();" class="mt-4 mobileNavbarLink" to="/merchandise">Merchandise</NuxtLink>   
           <NuxtLink @click="toggleMobileMenu();" class="mt-4 mobileNavbarLink" to="/accomodation">Accomodation</NuxtLink>
-          <NuxtLink @click="toggleMobileMenu();" class="mt-4 mobileNavbarLink" to="/registration">LogIn</NuxtLink>
+          <NuxtLink @click="toggleMobileMenu();" class="mt-4 mobileNavbarLink" to="/signin">LogIn</NuxtLink>
           <NuxtLink @click="toggleMobileMenu();" class="mt-4 mobileNavbarLink" to="/registration">SignUp</NuxtLink>
         </div>
     </div>

@@ -64,7 +64,7 @@
             <div class="flex grid-rows-1 justify-center md:grid md:grid-cols-3 xl:grid-cols-3 sm:grid-rows-1 mt-20 sm:mt-20 md:mt-4 lg:mt-16 xl:mt-12 items-center px-[4rem] w-screen">
               <div class="md:flex flex-row hidden sm:hidden md:inline-block lg:inline-block xl:inline-block text-[1.5rem]">
                 <a class="justify-start hidden sm:hidden md:inline-block lg:inline-block xl:inline-block items-center" href="https://youtu.be/7-WTO92O6xQ?si=AQFtNp-32mbIeAQh">
-                  <p style="font-family: 'oddval';" class="text-[1.5rem] text-white hover:text-[#EC941C] font-oddval">Dhanak '24: Theame</p>
+                  <p style="font-family: 'oddval';" class="text-[1.5rem] text-white hover:text-[#EC941C] font-oddval">Dhanak '24: Theme</p>
                 </a>
               </div>
             
@@ -210,21 +210,24 @@ export default {
       this.updateCountdown();
       setInterval(this.updateCountdown, 1000);
       // Make a GET request when the component is mounted
-      axios.get('https://backend.abhishekverma.me/api/events/?format=json', {
-        headers: {
-          'Content-Type': 'application/json'
-        },
-      })
-        .then(response => {
-          // Handle the successful response
-          this.apiData = response.data;
-        })
-        .catch(error => {
-          // Handle any errors that occurred during the request
-          console.error('Error fetching data:', error);
-        });
+      this.fetchEventData();
     },
     methods: {
+      fetchEventData() {
+    axios.get('https://backend.abhishekverma.me/api/events/?format=json', {
+      headers: {
+        'Content-Type': 'application/json'
+      },
+    })
+    .then(response => {
+      // Handle the successful response
+      this.apiData = response.data;
+    })
+    .catch(error => {
+      // Handle any errors that occurred during the request
+      console.error('Error fetching data:', error);
+    });
+  },
       updateCountdown() {
         const now = new Date().getTime();
         const distance = this.countDownDate - now;
@@ -246,3 +249,4 @@ export default {
     },
 }
 </script>
+
