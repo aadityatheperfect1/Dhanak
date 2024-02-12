@@ -10,7 +10,7 @@
                         <div class="mt-5">
                             <label class="font-semibold text-sm text-gray-400 pb-1 block" for="login">Username</label>
                             <input
-                                v-model="username"
+                                v-model="email"
                                 class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full bg-gray-700 text-white focus:border-blue-500 focus:ring-4 focus:ring-blue-500"
                                 type="text" id="login" />
                             <label class="font-semibold text-sm text-gray-400 pb-1 block" for="password">Password</label>
@@ -74,7 +74,7 @@
                             </div>
                         </div>
                         <div class="mt-5">
-                            <button
+                            <button @click="signin();"
                                 class="py-2 px-4 bg-[#EC941C] hover:bg-[#c8790a] focus:ring-blue-500 focus:ring-offset-blue-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg"
                                 type="submit">
                                 SIGN IN
@@ -101,4 +101,37 @@
   background-position: center;
 }
  </style>
+
+<script>
+import axios from 'axios';
+export default {
+  data() {
+    return {
+      email: '',
+      password: '',
+    };
+  },
+  methods: {
+    async signin() {
+  try {
+    console.log(this.csrf_token);
+    const response = axios.post('https://backend.abhishekverma.me/login/', {
+      username: this.email,
+      password: this.password,
+    }, {
+      headers: {
+        // "X-CSRFToken": this.csrf_token, 
+        "content-type": "application/json" // Adjust this based on your server's CORS configuration
+      },
+    });
+    console.log('Signuin success:', response.data);
+    // You can handle success here, such as redirecting to a login page
+  } catch (error) {
+    console.error('Signip failed:', error);
+    // Handle signup failure, show an error message, etc.
+  }
+}
+  },
+};
+</script>
 
