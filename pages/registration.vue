@@ -254,7 +254,7 @@ export default {
         "content-type": "application/json" // Adjust this based on your server's CORS configuration
       },
     });
-    console.log('Signup success:', response.data.message);
+    console.log('Signup success:', response);
     // You can handle success here, such as redirecting to a login page
   } catch (error) {
     console.error('Signup failed:', error);
