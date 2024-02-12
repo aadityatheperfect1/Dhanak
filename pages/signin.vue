@@ -124,7 +124,7 @@ export default {
         "content-type": "application/json" // Adjust this based on your server's CORS configuration
       },
     });
-    console.log('Signin success:', response);
+    console.log('Signin success:', response.data.message);
     // You can handle success here, such as redirecting to a login page
   } catch (error) {
     console.error('Signip failed:', error);
