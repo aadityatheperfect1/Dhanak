@@ -77,12 +77,12 @@
               </span>
             </div>
               <div class="my-auto flex hidden sm:hidden md:inline-block lg:inline-block xl:inline-block  absolute left-[42%] md:left-[45%] lg:left-[47%] xl:left-[48%]">
-                <a href="https://iist.dhanak.org.in/">
+                <a href="https://dhanak.iist.org.in/">
                   <img src="../assets/dhanak_logo_sm.svg" height="70vh" width="60vh" alt="Dhanak Logo" />
                 </a>
               </div>
               <div class="flex items-center justify-center sm:flex sm:items-center sm:justify-center inline-block sm:inline-block md:hidden lg:hidden xl:hidden">
-                <a class="flex sm:flex" href="https://iist.dhanak.org.in/">
+                <a class="flex sm:flex" href="https://dhanak.iist.org.in/">
                   <img src="../assets/dhanak_logo_sm.svg" height="70vh" width="60vh" alt="Dhanak Logo" />
                 </a>
               </div>

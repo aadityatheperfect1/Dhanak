@@ -8,12 +8,14 @@
                             <img class=" w-40" src="../assets/Dhanak_text.png" alt="">
                         </div>
                         <div class="mt-5">
-                            <label class="font-semibold text-sm text-gray-400 pb-1 block" for="login">E-mail</label>
+                            <label class="font-semibold text-sm text-gray-400 pb-1 block" for="login">Username</label>
                             <input
+                                v-model="username"
                                 class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full bg-gray-700 text-white focus:border-blue-500 focus:ring-4 focus:ring-blue-500"
                                 type="text" id="login" />
                             <label class="font-semibold text-sm text-gray-400 pb-1 block" for="password">Password</label>
                             <input
+                                v-model="password"
                                 class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full bg-gray-700 text-white focus:border-blue-500 focus:ring-4 focus:ring-blue-500"
                                 type="password" id="password" />
                         </div>
@@ -99,3 +101,4 @@
   background-position: center;
 }
  </style>
+

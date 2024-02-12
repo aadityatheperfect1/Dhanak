@@ -1,11 +1,11 @@
 <!-- Name of this file is merchandise.vue -->
 <template>
-  <div class="merchandise">
-    <div class="flex justify-center items-center">
-      <h1 class="mt-8" style="font-family: Market_Deco; text-shadow: 2px 2px 10px #000000; color: #EAF4D4; font-weight: bolder; font-size: 64px;">
-          Merchandise
-      </h1>
+  <header style="background-color: black;">
+    <div class="pt-20 pb-4 text-5xl sm:text-4xl md:text-7xl lg:text-7xl xl:text-7xl flex justify-center items-center" style="font-family: Market_Deco; text-shadow: 2px 2px 10px #000000; color: #EAF4D4; font-weight: bolder;">
+      Merchandise
     </div>
+  </header>
+  <div class="merchandise">
     <div id="Main">
       <ThreeCanvas :currentModelURL="currentModelURL" @selectImage="updateModel" />
       <TshirtGallery />

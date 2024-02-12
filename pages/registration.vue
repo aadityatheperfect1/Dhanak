@@ -2,7 +2,7 @@
 <template>
   <div class="signupPage grid justify-center items-center">
     <div class="mt-28 mb-20">
-      <form class="form w-screen">
+      <form @submit.prevent="signup" class="form w-screen">
         <p class="title">Register </p>
         <p class="message">Sign Up NOW! </p>
           <!-- <label>
@@ -11,6 +11,7 @@
           </label> -->
           <label class="font-semibold text-sm text-gray-400  block" for="firstname">First Name</label>
             <input
+                v-model="firstname"
                 class="border rounded-lg px-3 py-2 mt-1 text-sm w-full bg-gray-700 text-white focus:border-blue-500 focus:ring-4 focus:ring-blue-500"
                 type="text" id="firstname" />
           <!-- <label>
@@ -19,6 +20,7 @@
           </label> -->
           <label class="font-semibold text-sm text-gray-400  block" for="lastname">Last Name</label>
             <input
+                v-model="lastname"
                 class="border rounded-lg px-3 py-2 mt-1  text-sm w-full bg-gray-700 text-white focus:border-blue-500 focus:ring-4 focus:ring-blue-500"
                 type="text" id="lastname" />
         
@@ -29,6 +31,7 @@
         </label> -->
         <label class="font-semibold text-sm text-gray-400 block" for="login">E-mail</label>
         <input
+          v-model="email"
           class="border rounded-lg px-3 py-2 mt-1  text-sm w-full bg-gray-700 text-white focus:border-blue-500 focus:ring-4 focus:ring-blue-500"
           type="text" id="login" />
 
@@ -38,6 +41,7 @@
         </label> -->
         <label class="font-semibold text-sm text-gray-400  block" for="password">Password</label>
           <input
+              v-model="password"
               class="border rounded-lg px-3 py-2 mt-1  text-sm w-full bg-gray-700 text-white focus:border-blue-500 focus:ring-4 focus:ring-blue-500"
               type="password" id="password" />
         <!-- <label>
@@ -46,6 +50,7 @@
         </label> -->
         <label class="font-semibold text-sm text-gray-400  block" for="password">Confirm Password</label>
           <input
+              v-model="confirmpassword"
               class="border rounded-lg px-3 py-2 mt-1 text-sm w-full bg-gray-700 text-white focus:border-blue-500 focus:ring-4 focus:ring-blue-500"
               type="password" id="password" />
         <button class="submit">SIGN UP</button>
@@ -214,19 +219,26 @@
 </style>
 
 <script>
+import axios from 'axios';
 export default {
   data() {
     return {
       email: '',
       password: '',
+      firstname:'',
+      lastname:'',
+      confirmpassword:'',
     };
   },
   methods: {
     async signup() {
       try {
-        const response = await this.$axios.post('/signup', {
+        const response = await axios.post('https://backend.abhishekverma.me/register/', {
           email: this.email,
           password: this.password,
+          firstname: this.firstname,
+          lastname: this.lastname,
+          confirmpassword: this.confirmpassword,
         });
 
         console.log('Signup success:', response.data);

@@ -1,13 +1,12 @@
 <template>
-  
-  <div class="events">
-    <div class="flex justify-center items-center">
-      <h1 class="mt-8" style="font-family: Market_Deco; text-shadow: 2px 2px 10px #000000; color: #EAF4D4; font-weight: bolder; font-size: 64px;">
-          Events
-      </h1>
+  <header style="background-color: black;">
+    <div class="pt-20 pb-4 text-6xl sm:text-4xl md:text-7xl lg:text-7xl xl:text-7xl flex justify-center items-center" style="font-family: Market_Deco; text-shadow: 2px 2px 10px #000000; color: #EAF4D4; font-weight: bolder;">
+      Events
     </div>
+  </header>
+  <div class="events">
     <div class=" flex items-center justify-center">
-      <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-8 mx-2 my-4">
+      <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-8 mx-2 my-4">
         <!-- Event Cards -->
           <div v-for="item in apiData" :key="item.id" class="event-card  overflow-hidden mx-2 my-4">
           <div class="eventImage">
@@ -40,10 +39,6 @@
   src: url(../assets/fonts/Market_Deco.ttf);
 }
 
-.comingSoon{
-background-image: repeating-radial-gradient(  #0c0a0a 80%,#338a7d 90%,#086454 90%);
-background-size: 65px 65px;
-}
 
 .events{
 background-image: repeating-radial-gradient(  #338a7d 87%,#086454 90%);
