@@ -10,8 +10,8 @@
             <span>Firstname</span>
           </label> -->
           <label class="font-semibold text-sm text-gray-400  block" for="firstname">First Name</label>
-            <input
-                v-model="firstname"
+            <input required
+                v-model="first_name"
                 class="border rounded-lg px-3 py-2 mt-1 text-sm w-full bg-gray-700 text-white focus:border-blue-500 focus:ring-4 focus:ring-blue-500"
                 type="text" id="firstname" />
           <!-- <label>
@@ -19,8 +19,8 @@
             <span>Lastname</span>
           </label> -->
           <label class="font-semibold text-sm text-gray-400  block" for="lastname">Last Name</label>
-            <input
-                v-model="lastname"
+            <input required
+                v-model="last_name"
                 class="border rounded-lg px-3 py-2 mt-1  text-sm w-full bg-gray-700 text-white focus:border-blue-500 focus:ring-4 focus:ring-blue-500"
                 type="text" id="lastname" />
         
@@ -30,17 +30,17 @@
           <span>Email</span>
         </label> -->
         <label class="font-semibold text-sm text-gray-400 block" for="login">E-mail</label>
-        <input
+        <input required
           v-model="email"
           class="border rounded-lg px-3 py-2 mt-1  text-sm w-full bg-gray-700 text-white focus:border-blue-500 focus:ring-4 focus:ring-blue-500"
-          type="text" id="login" />
+          type="email" id="login" />
 
         <!-- <label>
           <input class="input bg-gray-700 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 px-3 py-2 mt-1" type="password" placeholder="" required="">
           <span>Password</span>
         </label> -->
         <label class="font-semibold text-sm text-gray-400  block" for="password">Password</label>
-          <input
+          <input required
               v-model="password"
               class="border rounded-lg px-3 py-2 mt-1  text-sm w-full bg-gray-700 text-white focus:border-blue-500 focus:ring-4 focus:ring-blue-500"
               type="password" id="password" />
@@ -49,7 +49,7 @@
           <span>Confirm password</span>
         </label> -->
         <label class="font-semibold text-sm text-gray-400  block" for="password">Confirm Password</label>
-          <input
+          <input required
               v-model="confirmpassword"
               class="border rounded-lg px-3 py-2 mt-1 text-sm w-full bg-gray-700 text-white focus:border-blue-500 focus:ring-4 focus:ring-blue-500"
               type="password" id="password" />
@@ -225,23 +225,33 @@ export default {
     return {
       email: '',
       password: '',
-      firstname:'',
-      lastname:'',
+      first_name:'',
+      last_name:'',
       confirmpassword:'',
+      // csrf_token:'',
     };
   },
+  // async mounted(){
+  //   const response1 = await axios.get('https://backend.abhishekverma.me/api/csrf-token/', {
+  //     headers: {
+  //       'Content-Type': 'application/json'
+  //     },
+  //   })
+  //   this.csrf_token = response1.data.csrf_token;
+  // },
   methods: {
     async signup() {
   try {
-    const response = await axios.post('https://backend.abhishekverma.me/register/', {
+    console.log(this.csrf_token);
+    const response = axios.post('https://backend.abhishekverma.me/register/', {
+      first_name: this.first_name,
+      last_name: this.last_name,
       email: this.email,
       password: this.password,
-      firstname: this.firstname,
-      lastname: this.lastname,
-      confirmpassword: this.confirmpassword,
     }, {
       headers: {
-        'Access-Control-Allow-Origin': '*', // Adjust this based on your server's CORS configuration
+        // "X-CSRFToken": this.csrf_token, 
+        "content-type": "application/json" // Adjust this based on your server's CORS configuration
       },
     });
     console.log('Signup success:', response.data);

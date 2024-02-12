@@ -1,5 +1,5 @@
 <template>
-    <header id="navbar" style="border-bottom: solid 1px rgb(50, 50, 50);" class="fixed text-[14px] font-oddval font-[400] top-0 h-[64px] z-50 flex items-center bg-[#111111] w-screen">
+    <header id="navbar" class="fixed text-[14px] font-oddval font-[400] top-0 h-[64px] z-50 flex items-center w-screen">
     <div class="flex w-screen items-center justify-between">
         <div class=" items-center text-white ml-[2rem]">
           <NuxtLink class="hidden  xl:inline-block" to="https://www.iist.ac.in/"><img height="120vh" width="200vh" src="../assets/IIST_LOGO_lg.svg" alt="Navbar logo"></NuxtLink>
@@ -63,8 +63,8 @@
   </header>
   <!-- Mobile Menu (Hidden by default) -->
   <div v-show="isMobileMenuVisible"
-        class=" shadow-lg w-full left-0 right-0 grid items-center justify-center"
-        style=" position: fixed; top:0;  z-index: 2; background-color: #111111e2;">
+        class=" bg-transparent backdrop-blur-2xl shadow-lg w-full left-0 right-0 grid items-center justify-center"
+        style=" position: fixed; top:0;  z-index: 2;">
         <div class="grid mt-20 mb-10">
           <NuxtLink @click="toggleMobileMenu();" class="mt-4 mobileNavbarLink" to="/">Home</NuxtLink>
           <NuxtLink @click="toggleMobileMenu();" class="mt-4 mobileNavbarLink" to="/about">About</NuxtLink>
@@ -101,11 +101,8 @@
   src: url(../assets/fonts/Market_Deco.ttf);
 }
   #navbar{
-    /* background: rgba(4, 4, 36, 0.86);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5.1px);
-    -webkit-backdrop-filter: blur(5.1px);
-    border: 1px solid rgba(4, 4, 36, 0.24); */
+    background: rgba(17, 17, 17, 0.76); box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); backdrop-filter: blur(7.2px); -webkit-backdrop-filter: blur(7.2px); border: 1px solid rgba(17, 17, 17, 0.3); border: 1px solid rgba(17, 17, 17, 0.3); border-bottom: solid 1px rgb(50, 50, 50);
+    
 }
 
 /* li{

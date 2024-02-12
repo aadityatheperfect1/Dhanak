@@ -85,7 +85,7 @@ export default {
 
 <template>
   <header class="h-screen bg-cover bg-center">
-    <img class="comingSoon" src="../assets/dhanak_landing.png" alt="dhanak landing">
+    <img class="comingSoon" src="../assets/dhanak_landing.webp" alt="dhanak landing">
     <div class="pt-20 text-6xl sm:text-4xl md:text-7xl lg:text-7xl xl:text-7xl flex justify-center items-center" style="font-family: Market_Deco; text-shadow: 2px 2px 10px #000000; color: #EAF4D4; font-weight: bolder;">
       Workshops
     </div>

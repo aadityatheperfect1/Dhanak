@@ -1,7 +1,7 @@
 <template>
   <header class="h-screen bg-cover bg-center">
-    <img class="comingSoon" src="../assets/dhanak_landing.png" alt="dhanak landing">
-    <div class="pt-20 text-6xl sm:text-4xl md:text-7xl lg:text-7xl xl:text-7xl flex justify-center items-center" style="color: #FFF9C9; font-family: Market_Deco; text-shadow: 2px 2px 10px #000000; color: #EAF4D4; font-weight: bolder;">
+    <img class="comingSoon" src="../assets/dhanak_landing.webp" alt="dhanak landing">
+    <div class="pt-20 text-6xl sm:text-4xl md:text-7xl lg:text-7xl xl:text-7xl text-center flex justify-center items-center" style="color: #FFF9C9; font-family: Market_Deco; text-shadow: 2px 2px 10px #000000; color: #EAF4D4; font-weight: bolder;">
       About
     </div>
     <section class="grid mb-0">

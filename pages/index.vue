@@ -1,6 +1,6 @@
 <template>
-    <header class="DhanakIntro h-screen bg-cover bg-center" data-scroll-container="true">
-      <img class="Dhanak_landing" src="../assets/dhanak_landing.png" alt="dhanak landing">
+    <header class="h-screen bg-cover bg-center" data-scroll-container="true">
+      <img class="Dhanak_landing" src="../assets/dhanak_landing.webp" alt="dhanak landing">
       <section class="grid mb-0">
           <div class=" mt-48 sm:mt-56 md:mt-56 lg:mt-32 xl:mt-40 grid justify-center items-center">
             <img class="max-w-sm sm:w-full md:max-w-2xl lg:max-w-2xl" src="../assets/Dhanak_text.png" alt="dhanak_text">
@@ -126,18 +126,7 @@
       text-align: center;
       font-family: 'Vintage';
     } 
-    .DhanakIntro{
-      
-        /* background-image: url(../assets/HomePagePattern.svg); */
-
-        /* background-image: repeating-radial-gradient(  #0c0a0a 80%,#338a7d 90%,#086454 90%);
-        background-size: 65px 65px; */
-
-        /* background-image: repeating-radial-gradient(  #DBDAD5 87%,#9e9d97 90%);
-  background-size: 50px 50px; */
-  /* background-image: url(../assets/dhanak_landing.jpg); */
-
-    }
+  
     .events{
         background-image: repeating-radial-gradient(  #338a7d 87%,#086454 90%);
   background-size: 50px 50px;
