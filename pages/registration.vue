@@ -232,22 +232,25 @@ export default {
   },
   methods: {
     async signup() {
-      try {
-        const response = await axios.post('https://backend.abhishekverma.me/register/', {
-          email: this.email,
-          password: this.password,
-          firstname: this.firstname,
-          lastname: this.lastname,
-          confirmpassword: this.confirmpassword,
-        });
-
-        console.log('Signup success:', response.data);
-        // You can handle success here, such as redirecting to a login page
-      } catch (error) {
-        console.error('Signup failed:', error);
-        // Handle signup failure, show an error message, etc.
-      }
-    },
+  try {
+    const response = await axios.post('https://backend.abhishekverma.me/register/', {
+      email: this.email,
+      password: this.password,
+      firstname: this.firstname,
+      lastname: this.lastname,
+      confirmpassword: this.confirmpassword,
+    }, {
+      headers: {
+        'Access-Control-Allow-Origin': '*', // Adjust this based on your server's CORS configuration
+      },
+    });
+    console.log('Signup success:', response.data);
+    // You can handle success here, such as redirecting to a login page
+  } catch (error) {
+    console.error('Signup failed:', error);
+    // Handle signup failure, show an error message, etc.
+  }
+}
   },
 };
 </script>
